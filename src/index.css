@@ -59,10 +59,6 @@ body {
   border-radius: 10px;
 }
 
-.rBtn {
-  padding: auto;
-}
-
 .rBtn [type="button"] {
   margin: 20px 100px;
   width: 100px;
