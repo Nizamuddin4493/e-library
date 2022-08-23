@@ -1,5 +1,5 @@
-const STATUS = 'bookStor/categories/STATUS';
-const INITIAL_STATE = [];
+const STATUS = 'bookStore/categories/STATUS';
+const INITIAL_STATE = ['Under Construction'];
 
 export function categories() {
   return {
@@ -7,10 +7,10 @@ export function categories() {
   };
 }
 
-export default function reducer(state = INITIAL_STATE, action) {
+export default function Categories(state = INITIAL_STATE, action) {
   switch (action.type) {
     case STATUS:
-      return 'Under Constructino';
+      return 'Under Construction';
     default:
       return state;
   }

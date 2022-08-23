@@ -1,9 +1,12 @@
-import { combineReducers, configureStore } from 'redux';
-import * as Books from './books/books';
-import * as Categories from './categories/categories';
+import { combineReducers, createStore } from 'redux';
+import addRemoveBook from './books/books';
+import Categories from './categories/categories';
 
-const rootReducer = combineReducers(Books, Categories);
+const rootReducer = combineReducers({
+  addRemoveBook,
+  Categories,
+});
 
-const Store = configureStore(rootReducer);
+const store = createStore(rootReducer);
 
-export default Store;
+export default store;
