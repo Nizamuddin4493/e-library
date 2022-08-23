@@ -1,6 +1,10 @@
 const ADD = 'bookStore/books/ADD';
 const REMOVE = 'bookStore/books/REMOVE';
-const INITIAL_STATE = [];
+const INITIAL_STATE = [
+  { id: 1, title: 'Js', auther: 'Nizam khan' },
+  { id: 2, title: 'react', auther: 'ahmad Khan' },
+  { id: 3, title: 'redux', auther: 'Mahmood Jan' },
+];
 
 export function addBook(book) {
   return {
@@ -16,7 +20,7 @@ export function removeBook(id) {
   };
 }
 
-export default function reducer(state = INITIAL_STATE, action) {
+export default function addRemoveBook(state = INITIAL_STATE, action) {
   switch (action.type) {
     case ADD:
       return [...state, action.payload];

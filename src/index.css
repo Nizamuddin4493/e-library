@@ -69,6 +69,10 @@ body {
   border-radius: 5px;
 }
 
+.rBtn [type="button"]:hover {
+  cursor: pointer;
+}
+
 hr {
   margin: 2px 100px;
 }
@@ -110,6 +114,10 @@ hr {
   color: #fff;
   border: none;
   border-radius: 5px;
+}
+
+.formfield [type="submit"]:hover {
+  cursor: pointer;
 }
 
 .cat-btn {
