@@ -1,8 +1,10 @@
+/* eslint-disable camelcase */
+
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBookFromApi } from '../redux/books/books';
 
-const Book = ({ id, title, auther }) => {
+const Book = ({ item_id, title, author }) => {
   const dispatch = useDispatch();
 
   return (
@@ -14,19 +16,19 @@ const Book = ({ id, title, auther }) => {
         </div>
         <div>
           <p>Auther</p>
-          <h2>{auther}</h2>
+          <h2>{author}</h2>
         </div>
         <div className="rBtn">
-          <button type="button" onClick={() => { dispatch(removeBook(id)); }}>Remove</button>
+          <button type="button" onClick={() => { dispatch(removeBookFromApi(item_id)); }}>Remove</button>
         </div>
       </div>
     </>
   );
 };
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
+  item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  auther: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 };
 
 export default Book;
