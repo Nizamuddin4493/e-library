@@ -129,3 +129,9 @@ hr {
   border: none;
   border-radius: 5px;
 }
+
+.progBar img {
+  margin: 0 auto;
+  width: 150px;
+  height: 80px;
+}
