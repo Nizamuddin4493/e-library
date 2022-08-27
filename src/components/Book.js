@@ -14,6 +14,12 @@ const Book = ({ item_id, title, author }) => {
         <div>
           <p>Title</p>
           <h2>{title}</h2>
+          <p className="nzm">Nizamuddin</p>
+          <div className="links">
+            <p>Commit</p>
+            <p>Remove</p>
+            <p>Edit</p>
+          </div>
         </div>
         <div>
           <p>Auther</p>

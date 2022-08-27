@@ -135,3 +135,16 @@ hr {
   width: 150px;
   height: 80px;
 }
+
+.links {
+  width: 200px;
+  margin: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #0290ff;
+}
+
+.nzm {
+  font-size: 12px;
+  color: #0290ff;
+}
