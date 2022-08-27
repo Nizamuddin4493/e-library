@@ -15,7 +15,7 @@ const Book = ({ item_id, title, author }) => {
           <p>Title</p>
           <h2>{title}</h2>
           <p className="nzm">Nizamuddin</p>
-          <div className="links">
+          <div className="blinks">
             <p>Commit</p>
             <p>Remove</p>
             <p>Edit</p>
