@@ -1,6 +1,6 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import addRemoveBook, { fetchBook } from './books/books';
+import addRemoveBook, { fetchBookThunk } from './books/books';
 import Categories from './categories/categories';
 
 const rootReducer = combineReducers({
@@ -10,6 +10,6 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
-store.dispatch(fetchBook());
+store.dispatch(fetchBookThunk());
 
 export default store;
