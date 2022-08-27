@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux/es/exports';
-import { addBook } from '../redux/books/books';
+import { addBookToApi } from '../redux/books/books';
 
 const Form = () => {
   const [bookTitle, setBookTitle] = useState('');
   const [bookAuthor, setBookAuthor] = useState('');
   const despatch = useDispatch();
+
   const newBookTitle = (e) => {
     setBookTitle(e.target.value);
   };
@@ -17,11 +19,13 @@ const Form = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const newBook = {
-      id: new Date().getTime(),
+      item_id: uuidv4(),
       title: bookTitle,
-      auther: bookAuthor,
+      author: bookAuthor,
+      category: 'Fiction',
     };
-    despatch(addBook(newBook));
+
+    despatch(addBookToApi(newBook));
     setBookTitle('');
     setBookAuthor('');
   };
