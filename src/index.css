@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 100px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background-color: #fff;
+  display: flex;
+}
+
+.header h1 {
+  color: #0290ff;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  padding: 10px 20px;
+  width: 180px;
+  list-style-type: none;
+}
+
+.links {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.header ul li:hover {
+  cursor: pointer;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+  margin-left: 650px;
+}
+
+.books-list {
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #fafafa;
+}
+
+.singlBook {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.rBtn [type="button"] {
+  margin: 20px 100px;
+  width: 100px;
+  height: 30px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.rBtn [type="button"]:hover {
+  cursor: pointer;
+}
+
+hr {
+  margin: 2px 100px;
+}
+
+.formfield {
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 100px;
+}
+
+.formfield [name="title"] {
+  width: 500px;
+  height: 40px;
+  margin: 20px 20px 50px 0;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border: 1px solid rgb(228, 228, 228);
+  outline: none;
+}
+
+.formfield [name="auther"] {
+  width: 350px;
+  height: 40px;
+  margin: 20px 20px 50px 10px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border: 1px solid rgb(228, 228, 228);
+  outline: none;
+}
+
+.formfield [type="submit"] {
+  margin: 20px 10px;
+  width: 100px;
+  height: 37px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.formfield [type="submit"]:hover {
+  cursor: pointer;
+}
+
+.cat-btn {
+  margin: 20px 100px;
+  width: 100px;
+  height: 37px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.progBar img {
+  margin: 0 auto;
+  width: 150px;
+  height: 80px;
+}
+
+.blinks {
+  width: 200px;
+  margin: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #0290ff;
+  cursor: pointer;
+}
+
+.nzm {
+  font-size: 12px;
+  color: #0290ff;
+  cursor: pointer;
+}
